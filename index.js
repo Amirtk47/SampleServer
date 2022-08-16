@@ -4,7 +4,7 @@ var app = opine();
 
 import { registerRoutes } from "./handlers.js";
 
-registerRoutes(app);
+registerRoutes(app, localStorage);
 
 app.listen(8080, function () {
   console.log("Listening on port 8080 ");
