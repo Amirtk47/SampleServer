@@ -1,9 +1,9 @@
 var express = require("express");
-var router = express.Router();
+var registerRoutes = require("./handlers");
 
-import {registerRoutes} from "./handlers"
+var app = express();
 
-registerRoutes(router);
+registerRoutes(app);
 
 var listener = app.listen(8080, function () {
   console.log("Listening on port " + listener.address().port);
