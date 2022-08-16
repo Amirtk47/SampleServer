@@ -10,7 +10,7 @@
     "morgan": "1.10.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.21"
